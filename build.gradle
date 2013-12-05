@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'release'
 
 sourceCompatibility = 1.6
 version = '0.5'
@@ -19,6 +20,10 @@ repositories {
 buildscript {
     repositories {
         mavenCentral()
+        maven { url "https://oss.sonatype.org/content/groups/public"}
+    }
+    dependencies {
+      classpath 'com.github.townsfolk:gradle-release:1.2'
     }
 }
 
@@ -38,3 +43,7 @@ dependencies {
                 
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
+
+
+
+//  contextUrl = 'file://../kitchen-repo/releases'   

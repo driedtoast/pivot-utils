@@ -8,7 +8,7 @@ import org.tmatesoft.sqljet.core.table.SqlJetDb;
 
 public class SqlLiteDatabaseService implements DatabaseService<SqlJetDb> {
 
-	public static final String DB_FILE = ".." + File.pathSeparator + "do-data.db"; 
+	public static final String DB_FILE = ".." + File.separator + "app-data.db"; 
 	private SqlJetDb db = null;
 	private Class<?>[] models;
 	

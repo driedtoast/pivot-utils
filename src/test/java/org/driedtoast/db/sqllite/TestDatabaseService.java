@@ -15,7 +15,7 @@ public class TestDatabaseService extends SqlLiteDatabaseService {
 	
 	@Override
 	public String getDatabaseUrl() {
-	   return ".." + File.pathSeparator + "do-test-data.db";
+	   return ".." + File.separator + "test-data.db";
 	}
 	
 	@Override
